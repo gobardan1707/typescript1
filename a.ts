@@ -1,3 +1,5 @@
+import { Interface } from "readline";
+
 const z: number = 1;
 console.log(z);
 
@@ -33,3 +35,22 @@ redflag(function () {
 });
 
 // we always have to keep the .js file and the .ts files in th e separete folder so the typescript fiels will save inside the dist golder or buil folder/ //
+
+ interface User{
+  name: string,
+  age: number
+};
+
+function check(user: User):boolean{
+  if(user.age>18){
+    return true;
+  }else{
+    return false;
+  }
+};
+check({
+  name:'rami',
+  age:6
+})// a component in react is nothing but a function that mostly returns a jsx elemnent so a todo componenet in react will take the title,name,desc as the arguments and then it will return the remainng part of the jsx element 
+
+
